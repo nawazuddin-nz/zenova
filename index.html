@@ -84,12 +84,13 @@ dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}
 /* info */
 .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px;border-top:1px solid var(--line)}
 .info h2{font-size:26px}.info p{color:var(--dim);margin:0 0 .6em}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:26px}.ct a{display:block;padding:26px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none;transition:background .3s}.ct a:hover{background:linear-gradient(160deg,#e8b94a22,transparent)}.ct b{display:block;font-family:Cinzel,serif;font-weight:600;font-size:20px;letter-spacing:.05em}.ct span{color:var(--g2);letter-spacing:.08em}
 footer{text-align:center;padding:50px 20px calc(50px + env(safe-area-inset-bottom,0px));color:var(--dim);font-size:13px;letter-spacing:.12em;border-top:1px solid var(--line)}
 @media(max-width:640px){nav a{display:none}.row{grid-template-columns:36px 1fr auto}.facts{border-radius:24px}.facts div+div{border-left:0;border-top:1px solid var(--line)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1{opacity:1;background-position:0 0}}
 </style></head>
 <body>
-<nav><b>ZENOVIA</b><span><a href="#events">EVENTS</a><a href="#info">VENUE</a></span></nav>
+<nav><b>ZENOVIA</b><span><a href="#events">EVENTS</a><a href="#info">VENUE</a><a href="#contact">CONTACT</a></span></nav>
 
 <header class="hero" id="top">
 <canvas id="dust" aria-hidden="true"></canvas>
@@ -120,6 +121,8 @@ footer{text-align:center;padding:50px 20px calc(50px + env(safe-area-inset-botto
 <div><h2 class="gold">Venue</h2><p>Auditorium, Mount View Campus<br>Kishkinda University, Ballari</p><p>Date to be announced. We will update it here once it is confirmed.</p></div>
 <div><h2 class="gold">Good to know</h2><p>Register for each event with its own Google Form. Reach out to the event coordinators for any doubt. The organisers’ and judges’ decisions are final.</p></div>
 </section>
+<section id="contact" style="padding-top:30px"><h2 class="gold">Contact &amp; support</h2><p class="lead" style="margin:0">Got a doubt? Reach out to our student coordinators. Tap a number to call.</p>
+<div class="ct"><a href="tel:+919063615721"><b>Mr. Munavar</b><span>9063615721</span></a><a href="tel:+916361634011"><b>Mr. Raghu</b><span>6361634011</span></a><a href="tel:+918328435495"><b>Ms. Meghana</b><span>8328435495</span></a><a href="tel:+918660425809"><b>Ms. Anushree</b><span>8660425809</span></a></div></section>
 <footer>T.E.H.R.D TRUST’S KISHKINDA UNIVERSITY, BALLARI<br>ZENOVIA 2026</footer>
 
 <dialog id="dlg" aria-labelledby="dt"><button class="x" id="cx" aria-label="Close">×</button><div class="pn" id="pn"></div></dialog>
